@@ -2,8 +2,8 @@ import ctypes
 import numpy as np
 import time
 
-perlin_lib_mp = ctypes.CDLL('./naive_perlin_mp.so')
-perlin_lib = ctypes.CDLL('./naive_perlin.so')
+perlin_lib_mp = ctypes.CDLL('./funcs/naive_perlin_mp.so')
+perlin_lib = ctypes.CDLL('./funcs/naive_perlin.so')
 
 perlin_lib_mp.perlin_noise.argtypes = [
     ctypes.POINTER(ctypes.c_int),    
